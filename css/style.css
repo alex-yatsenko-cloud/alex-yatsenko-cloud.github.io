@@ -18,7 +18,10 @@
     font-display: swap;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; 
+  --color-accent: rgb(10, 116, 10);
+  --color-card-link: rgb(105 56 4);
+}
 
 body {
   margin: 0;
@@ -83,18 +86,23 @@ section {
   padding: 1em;
 }
 
+.bento-card a {
+  text-decoration: none;
+  color: var(--color-card-link);
+}
+
 .bento-card-green {
-  background: #4a9450;
+  background: #b9f5be;
 }
 
 .bento-card-blue {
-  background: #4a90e2;
+  background: #83b3eb;
 }
 
 .card-item1 {
   grid-column: span 1;
   grid-row: span 2;
-  background: #ff5500;
+  background: #f3b799;
 }
 .card-center2x2 {
   grid-column: span 2;
@@ -134,3 +142,24 @@ section {
     );
 }
 }
+
+.relative {
+  position: relative;
+}
+
+.logo-project {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-accent {
+  color: var(--color-accent)
+}
+
