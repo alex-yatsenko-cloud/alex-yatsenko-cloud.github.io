@@ -14,11 +14,11 @@
     src: url('../fonts/BerlinType-Bold.woff2') format('woff2'),
          url('../fonts/BerlinType-Bold.woff') format('woff');
     font-weight: 700;
-    font-style: bold;
     font-display: swap;
 }
 
-html { scroll-behavior: smooth; 
+html { 
+  scroll-behavior: smooth; 
   --color-accent: rgb(10, 116, 10);
   --color-card-link: rgb(105 56 4);
 }
@@ -26,9 +26,26 @@ html { scroll-behavior: smooth;
 body {
   margin: 0;
   font-family: 'Berlin Type', Arial, system-ui, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   color: #222;
   background: #fff;
+}
+
+a {
+  color: var(--color-card-link);
+  text-decoration: none;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 8px 8px;
+  box-shadow: inset 0px 0px 4px 4px #caa070;
+  border-radius: 8px;
+}
+
+a.btn:hover {
+  box-shadow: inset 0px 0px 4px 2px var(--color-card-link);
 }
 
 .site-header {
@@ -160,6 +177,6 @@ section {
 }
 
 .text-accent {
-  color: var(--color-accent)
+  color: var(--color-accent);
 }
 
